@@ -43,18 +43,40 @@ class ScaffoldExample extends StatelessWidget {
           )
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          debugPrint("Floating Button Tapped");
+        },
+        shape: const CircleBorder(),
+        backgroundColor: Colors.yellow,
+        child: const Icon(Icons.call),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.blue,
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.email), label: "Email"),
+          BottomNavigationBarItem(icon: Icon(Icons.message), label: "Message"),
+          BottomNavigationBarItem(icon: Icon(Icons.delete), label: "Delete")
+        ],
+        onTap: (int index) => {
+          if (index == 0)
+            {debugPrint("Email")}
+          else if (index == 1)
+            {debugPrint("Message")}
+          else if (index == 2)
+            {debugPrint("Delete")}
+        },
+      ),
       backgroundColor: Colors.white,
       body: Container(
         // margin: const EdgeInsets.symmetric(horizontal: 10),
         // margin: const EdgeInsets.all(10),
-        margin: const EdgeInsets.fromLTRB(10,10,10,10),
-        color: Colors.blue,
+        margin: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+        color: Colors.white,
         alignment: Alignment.center,
         child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            CustomButton()
-          ],
+          children: <Widget>[CustomButton()],
         ),
       ),
     );
