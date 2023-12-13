@@ -1,3 +1,4 @@
+import 'package:first_flutter_project/ui/QuotesScreen.dart';
 import 'package:first_flutter_project/ui/bizcard.dart';
 import 'package:first_flutter_project/ui/custombutton.dart';
 import 'package:first_flutter_project/ui/home.dart';
@@ -10,7 +11,8 @@ void main() => runApp(const MaterialApp(
   // home: MyHome()
   // home: ScaffoldExample()
   // home: CustomButton()
-  home: BizCard()
+  // home: BizCard()
+  home: QuotesScreen()
 ));
 
 
