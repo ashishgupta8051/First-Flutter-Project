@@ -1,4 +1,4 @@
-import 'package:first_flutter_project/ui/QuotesScreen.dart';
+import 'package:first_flutter_project/ui/quotesscreen.dart';
 import 'package:first_flutter_project/ui/bizcard.dart';
 import 'package:first_flutter_project/ui/custombutton.dart';
 import 'package:first_flutter_project/ui/home.dart';

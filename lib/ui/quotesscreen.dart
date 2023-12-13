@@ -27,6 +27,7 @@ class _QuotesScreenState extends State<QuotesScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        centerTitle: false,
         backgroundColor: Colors.blue,
         title: const Text(
           "Quotes List",
