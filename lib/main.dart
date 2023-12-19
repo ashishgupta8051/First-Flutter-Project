@@ -1,3 +1,4 @@
+import 'package:first_flutter_project/ui/quizapp.dart';
 import 'package:first_flutter_project/ui/quotesscreen.dart';
 import 'package:first_flutter_project/ui/bizcard.dart';
 import 'package:first_flutter_project/ui/custombutton.dart';
@@ -14,7 +15,8 @@ void main() => runApp(const MaterialApp(
   // home: CustomButton()
   // home: BizCard()
   // home: QuotesScreen()
-  home: SplitCalculator()
+  // home: SplitCalculator()
+  home: QuizApp()
 ));
 
 

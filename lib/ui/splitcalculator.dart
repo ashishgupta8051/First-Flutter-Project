@@ -234,7 +234,8 @@ class _SplitCalculatorState extends State<SplitCalculator> {
   }
 
   calculateTotalBillAmount(int splitBy, double billAmount, int tipPercentage) {
-    var totalBill = (calculateTip(tipPercentage, billAmount) + billAmount) / splitBy;
+    var totalBill =
+        (calculateTip(tipPercentage, billAmount) + billAmount) / splitBy;
     return totalBill.toStringAsFixed(2);
   }
 
