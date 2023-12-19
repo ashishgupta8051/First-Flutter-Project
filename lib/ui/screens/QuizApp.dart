@@ -116,6 +116,32 @@ class _QuizAppState extends State<QuizApp> {
                       shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.circular(6.0))),
                       elevation: 0.0,
+                      minWidth: 50,
+                      height: 40,
+                      color: _grey,
+                      child: const Row(
+                        children: [
+                          Icon(
+                            Icons.navigate_before,
+                            // Replace with your image
+                            size: 25,
+                            color: Colors.white,
+                          ),
+                        ],
+                      ),
+                      onPressed: () {
+                        setState(() {
+                          if(questionNumber != 1){
+                            questionIndex--;
+                            questionNumber--;
+                          }
+                        });
+                      },
+                    ),
+                    MaterialButton(
+                      shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(6.0))),
+                      elevation: 0.0,
                       minWidth: 110.0,
                       height: 40,
                       color: _grey,
@@ -185,15 +211,11 @@ class _QuizAppState extends State<QuizApp> {
                       shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.circular(6.0))),
                       elevation: 0.0,
-                      minWidth: 110.0,
+                      minWidth: 50,
                       height: 40,
                       color: _grey,
                       child: const Row(
                         children: [
-                          Text('Next',
-                              style:
-                              TextStyle(fontSize: 16.0, color: Colors.white)),
-                          Padding(padding: EdgeInsets.only(right: 6)),
                           Icon(
                             Icons.navigate_next_outlined,
                             // Replace with your image
