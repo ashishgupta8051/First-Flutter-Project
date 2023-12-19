@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../model/QuizItem.dart';
-import '../utils/HexColor.dart';
+import '../../model/QuizItem.dart';
+import '../../utils/HexColor.dart';
 
 class QuizApp extends StatefulWidget {
   const QuizApp({super.key});

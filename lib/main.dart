@@ -1,10 +1,8 @@
-import 'package:first_flutter_project/ui/quizapp.dart';
-import 'package:first_flutter_project/ui/quotesscreen.dart';
-import 'package:first_flutter_project/ui/bizcard.dart';
-import 'package:first_flutter_project/ui/custombutton.dart';
-import 'package:first_flutter_project/ui/home.dart';
-import 'package:first_flutter_project/ui/scaffoldexaple.dart';
-import 'package:first_flutter_project/ui/splitcalculator.dart';
+import 'package:first_flutter_project/ui/screens/quizapp.dart';
+import 'package:first_flutter_project/ui/screens/quotesscreen.dart';
+import 'package:first_flutter_project/ui/screens/bizcard.dart';
+import 'package:first_flutter_project/ui/widgets/custombutton.dart';
+import 'package:first_flutter_project/ui/screens/splitcalculator.dart';
 import 'package:flutter/material.dart';
 
 // void main() => runApp(const MyApp());
