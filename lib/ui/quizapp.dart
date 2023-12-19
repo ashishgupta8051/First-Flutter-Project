@@ -153,7 +153,7 @@ class _QuizAppState extends State<QuizApp> {
                       minWidth: 110.0,
                       height: 40,
                       color: _grey,
-                      child: const Text('false',
+                      child: const Text('False',
                           style: TextStyle(fontSize: 16.0, color: Colors.white)),
                       onPressed: () {
                         setState(() {
