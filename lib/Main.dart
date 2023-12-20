@@ -1,3 +1,4 @@
+import 'package:first_flutter_project/ui/screens/moviescreens/MovieList.dart';
 import 'package:first_flutter_project/ui/screens/QuizApp.dart';
 import 'package:first_flutter_project/ui/screens/QuotesScreen.dart';
 import 'package:first_flutter_project/ui/screens/BizCard.dart';
@@ -14,7 +15,8 @@ void main() => runApp(const MaterialApp(
   // home: BizCard()
   // home: QuotesScreen()
   // home: SplitCalculator()
-  home: QuizApp()
+  // home: QuizApp()
+  home: MovieList()
 ));
 
 
