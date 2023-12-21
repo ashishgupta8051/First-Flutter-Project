@@ -9,6 +9,17 @@ class BizCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: true,
+        leading: GestureDetector(
+          onTap: () {
+            debugPrint("Back");
+            Navigator.pop(context);
+          },
+          child: const Icon(
+            Icons.arrow_back,
+            color: Colors.black, // Change the color of the arrow icon
+          ),
+        ),
         backgroundColor: Colors.yellow,
         title: const Text("Biz Card"),
       ),

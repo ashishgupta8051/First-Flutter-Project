@@ -51,10 +51,21 @@ class _QuizAppState extends State<QuizApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: _grey.withOpacity(0.5),
+      backgroundColor: Colors.black,
       appBar: AppBar(
+        automaticallyImplyLeading: true,
+        leading: GestureDetector(
+          onTap: () {
+            debugPrint("Back");
+            Navigator.pop(context);
+          },
+          child: const Icon(
+            Icons.arrow_back,
+            color: Colors.white, // Change the color of the arrow icon
+          ),
+        ),
         centerTitle: true,
-        backgroundColor: _grey.withOpacity(0.5),
+        backgroundColor: _grey.withOpacity(1),
         title: const Text(
           "Quiz App",
           style: TextStyle(
@@ -77,8 +88,9 @@ class _QuizAppState extends State<QuizApp> {
                 width: MediaQuery.of(context).size.width,
                 height: 120,
                 decoration: BoxDecoration(
+                    color: _grey,
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Colors.white, width: 1)),
+                    border: Border.all(color: Colors.white30, width: 1)),
                 child: Column(
                   children: [
                     Padding(
@@ -131,7 +143,7 @@ class _QuizAppState extends State<QuizApp> {
                       ),
                       onPressed: () {
                         setState(() {
-                          if(questionNumber != 1){
+                          if (questionNumber != 1) {
                             questionIndex--;
                             questionNumber--;
                           }
@@ -146,16 +158,17 @@ class _QuizAppState extends State<QuizApp> {
                       height: 40,
                       color: _grey,
                       child: const Text('Ture',
-                          style: TextStyle(fontSize: 16.0, color: Colors.white)),
+                          style:
+                              TextStyle(fontSize: 16.0, color: Colors.white)),
                       onPressed: () {
                         setState(() {
                           bool checked = indiaQuizList[questionIndex].isTrue;
                           String value;
                           bool isCondition;
-                          if(checked){
+                          if (checked) {
                             value = "Correct";
                             isCondition = true;
-                          }else{
+                          } else {
                             value = "Incorrect";
                             isCondition = false;
                           }
@@ -163,12 +176,14 @@ class _QuizAppState extends State<QuizApp> {
                             duration: const Duration(seconds: 1),
                             content: Text(
                               value,
-                              style:  TextStyle(fontSize: 16,color: isCondition ? Colors.green : Colors.red),
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  color:
+                                      isCondition ? Colors.green : Colors.red),
                             ),
                             backgroundColor: Colors.white,
                           );
-                          ScaffoldMessenger.of(context)
-                              .showSnackBar(shackBar);
+                          ScaffoldMessenger.of(context).showSnackBar(shackBar);
                         });
                       },
                     ),
@@ -180,16 +195,17 @@ class _QuizAppState extends State<QuizApp> {
                       height: 40,
                       color: _grey,
                       child: const Text('False',
-                          style: TextStyle(fontSize: 16.0, color: Colors.white)),
+                          style:
+                              TextStyle(fontSize: 16.0, color: Colors.white)),
                       onPressed: () {
                         setState(() {
                           bool checked = indiaQuizList[questionIndex].isTrue;
                           String value;
                           bool isCondition;
-                          if(!checked){
+                          if (!checked) {
                             value = "Correct";
                             isCondition = true;
-                          }else{
+                          } else {
                             value = "Incorrect";
                             isCondition = false;
                           }
@@ -197,14 +213,15 @@ class _QuizAppState extends State<QuizApp> {
                             duration: const Duration(seconds: 1),
                             content: Text(
                               value,
-                              style: TextStyle(fontSize: 16,color: isCondition ? Colors.green : Colors.red),
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  color:
+                                      isCondition ? Colors.green : Colors.red),
                             ),
                             backgroundColor: Colors.white,
                           );
-                          ScaffoldMessenger.of(context)
-                              .showSnackBar(shackBar);
+                          ScaffoldMessenger.of(context).showSnackBar(shackBar);
                         });
-
                       },
                     ),
                     MaterialButton(
@@ -226,10 +243,10 @@ class _QuizAppState extends State<QuizApp> {
                       ),
                       onPressed: () {
                         setState(() {
-                          if(indiaQuizList.length == questionIndex + 1){
+                          if (indiaQuizList.length == questionIndex + 1) {
                             questionIndex = 0;
                             questionNumber = 1;
-                          }else{
+                          } else {
                             questionIndex++;
                             questionNumber++;
                           }

@@ -1,13 +1,20 @@
+import 'package:first_flutter_project/model/movies.dart';
+import 'package:first_flutter_project/ui/screens/moviescreens/MovieDetailsCasts.dart';
+import 'package:first_flutter_project/ui/screens/moviescreens/MovieDetailsExtraImages.dart';
+import 'package:first_flutter_project/ui/screens/moviescreens/MovieDetailsHeaderWithImage.dart';
 import 'package:first_flutter_project/ui/screens/moviescreens/MovieList.dart';
 import 'package:flutter/material.dart';
 
-class MovieDetails extends StatelessWidget {
-   final String? movieName;
+import 'MovieDetailsThumbnail.dart';
 
-  const MovieDetails({super.key,  this.movieName});
+class MovieDetails extends StatelessWidget {
+  final Movies? moviesObj;
+
+  const MovieDetails({super.key, this.moviesObj});
 
   @override
   Widget build(BuildContext context) {
+    Movies movies = moviesObj!;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -28,8 +35,14 @@ class MovieDetails extends StatelessWidget {
           style: TextStyle(fontSize: 20, color: Colors.white),
         ),
       ),
-      body: Center(child: Text(movieName??"Null"),),
+      body: ListView(
+        children: [
+          MovieDetailsThumbnail(thumbnail: moviesObj!.images[0]),
+          MovieDetailsHeaderWithImage(movies: movies),
+          MovieDetailsCasts(movies: movies),
+          MovieDetailsExtraImages(imageList: movies.images,)
+        ],
+      ),
     );
   }
-
 }

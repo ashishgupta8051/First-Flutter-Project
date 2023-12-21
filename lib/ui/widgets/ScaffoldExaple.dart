@@ -68,17 +68,6 @@ class ScaffoldExample extends StatelessWidget {
         },
       ),
       backgroundColor: Colors.white,
-      body: Container(
-        // margin: const EdgeInsets.symmetric(horizontal: 10),
-        // margin: const EdgeInsets.all(10),
-        margin: const EdgeInsets.fromLTRB(10, 10, 10, 10),
-        color: Colors.white,
-        alignment: Alignment.center,
-        child: const Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[CustomButton()],
-        ),
-      ),
     );
   }
 }

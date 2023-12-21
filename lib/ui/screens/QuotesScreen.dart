@@ -27,6 +27,17 @@ class _QuotesScreenState extends State<QuotesScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        automaticallyImplyLeading: true,
+        leading: GestureDetector(
+          onTap: () {
+            debugPrint("Back");
+            Navigator.pop(context);
+          },
+          child: const Icon(
+            Icons.arrow_back,
+            color: Colors.white, // Change the color of the arrow icon
+          ),
+        ),
         centerTitle: false,
         backgroundColor: Colors.blue,
         title: const Text(
@@ -34,7 +45,7 @@ class _QuotesScreenState extends State<QuotesScreen> {
           style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,
-              color: Colors.black,
+              color: Colors.white,
               fontStyle: FontStyle.normal),
         ),
       ),

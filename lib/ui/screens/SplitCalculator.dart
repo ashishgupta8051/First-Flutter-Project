@@ -19,6 +19,17 @@ class _SplitCalculatorState extends State<SplitCalculator> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        automaticallyImplyLeading: true,
+        leading: GestureDetector(
+          onTap: () {
+            debugPrint("Back");
+            Navigator.pop(context);
+          },
+          child: const Icon(
+            Icons.arrow_back,
+            color: Colors.white, // Change the color of the arrow icon
+          ),
+        ),
         backgroundColor: Colors.blueAccent,
         centerTitle: false,
         title: const Text(

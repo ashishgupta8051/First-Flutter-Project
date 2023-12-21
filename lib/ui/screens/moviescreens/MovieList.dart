@@ -4,6 +4,8 @@ import 'package:first_flutter_project/model/movies.dart';
 import 'package:first_flutter_project/ui/screens/moviescreens/MovieDetails.dart';
 import 'package:flutter/material.dart';
 
+import '../../../utils/HexColor.dart';
+
 class MovieList extends StatefulWidget {
   const MovieList({super.key});
 
@@ -12,7 +14,6 @@ class MovieList extends StatefulWidget {
 }
 
 class _MovieListState extends State<MovieList> {
-
   final List<Map<String, dynamic>> jsonDataList = [
     {
       "Title": "Avatar",
@@ -24,11 +25,13 @@ class _MovieListState extends State<MovieList> {
       "Director": "James Cameron",
       "Writer": "James Cameron",
       "Actors": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
-      "Plot": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+      "Plot":
+      "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
       "Language": "English, Spanish",
       "Country": "USA, UK",
       "Awards": "Won 3 Oscars. Another 80 wins & 121 nominations.",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
       "Metascore": "83",
       "imdbRating": "7.9",
       "imdbVotes": "890,617",
@@ -51,13 +54,17 @@ class _MovieListState extends State<MovieList> {
       "Runtime": "101 min",
       "Genre": "Drama, Horror, Sci-Fi",
       "Director": "Francis Lawrence",
-      "Writer": "Mark Protosevich (screenplay), Akiva Goldsman (screenplay), Richard Matheson (novel), John William Corrington, Joyce Hooper Corrington",
-      "Actors": "Will Smith, Alice Braga, Charlie Tahan, Salli Richardson-Whitfield",
-      "Plot": "Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
+      "Writer":
+      "Mark Protosevich (screenplay), Akiva Goldsman (screenplay), Richard Matheson (novel), John William Corrington, Joyce Hooper Corrington",
+      "Actors":
+      "Will Smith, Alice Braga, Charlie Tahan, Salli Richardson-Whitfield",
+      "Plot":
+      "Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
       "Language": "English",
       "Country": "USA",
       "Awards": "9 wins & 21 nominations.",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BMTU4NzMyNDk1OV5BMl5BanBnXkFtZTcwOTEwMzU1MQ@@._V1_SX300.jpg",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BMTU4NzMyNDk1OV5BMl5BanBnXkFtZTcwOTEwMzU1MQ@@._V1_SX300.jpg",
       "Metascore": "65",
       "imdbRating": "7.2",
       "imdbVotes": "533,874",
@@ -79,13 +86,16 @@ class _MovieListState extends State<MovieList> {
       "Runtime": "117 min",
       "Genre": "Action, Drama, Fantasy",
       "Director": "Zack Snyder",
-      "Writer": "Zack Snyder (screenplay), Kurt Johnstad (screenplay), Michael Gordon (screenplay), Frank Miller (graphic novel), Lynn Varley (graphic novel)",
+      "Writer":
+      "Zack Snyder (screenplay), Kurt Johnstad (screenplay), Michael Gordon (screenplay), Frank Miller (graphic novel), Lynn Varley (graphic novel)",
       "Actors": "Gerard Butler, Lena Headey, Dominic West, David Wenham",
-      "Plot": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
+      "Plot":
+      "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
       "Language": "English",
       "Country": "USA",
       "Awards": "16 wins & 42 nominations.",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BMjAzNTkzNjcxNl5BMl5BanBnXkFtZTYwNDA4NjE3._V1_SX300.jpg",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BMjAzNTkzNjcxNl5BMl5BanBnXkFtZTYwNDA4NjE3._V1_SX300.jpg",
       "Metascore": "52",
       "imdbRating": "7.7",
       "imdbVotes": "611,046",
@@ -106,13 +116,16 @@ class _MovieListState extends State<MovieList> {
       "Runtime": "143 min",
       "Genre": "Action, Sci-Fi, Thriller",
       "Director": "Joss Whedon",
-      "Writer": "Joss Whedon (screenplay), Zak Penn (story), Joss Whedon (story)",
+      "Writer":
+      "Joss Whedon (screenplay), Zak Penn (story), Joss Whedon (story)",
       "Actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
-      "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
+      "Plot":
+      "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
       "Language": "English, Russian",
       "Country": "USA",
       "Awards": "Nominated for 1 Oscar. Another 34 wins & 75 nominations.",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX300.jpg",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX300.jpg",
       "Metascore": "69",
       "imdbRating": "8.1",
       "imdbVotes": "1,003,301",
@@ -136,12 +149,15 @@ class _MovieListState extends State<MovieList> {
       "Genre": "Biography, Comedy, Crime",
       "Director": "Martin Scorsese",
       "Writer": "Terence Winter (screenplay), Jordan Belfort (book)",
-      "Actors": "Leonardo DiCaprio, Jonah Hill, Margot Robbie, Matthew McConaughey",
-      "Plot": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
+      "Actors":
+      "Leonardo DiCaprio, Jonah Hill, Margot Robbie, Matthew McConaughey",
+      "Plot":
+      "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
       "Language": "English, French",
       "Country": "USA",
       "Awards": "Nominated for 5 Oscars. Another 35 wins & 154 nominations.",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_SX300.jpg",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_SX300.jpg",
       "Metascore": "75",
       "imdbRating": "8.2",
       "imdbVotes": "786,985",
@@ -165,12 +181,15 @@ class _MovieListState extends State<MovieList> {
       "Genre": "Adventure, Drama, Sci-Fi",
       "Director": "Christopher Nolan",
       "Writer": "Jonathan Nolan, Christopher Nolan",
-      "Actors": "Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow",
-      "Plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "Actors":
+      "Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow",
+      "Plot":
+      "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
       "Language": "English",
       "Country": "USA, UK",
       "Awards": "Won 1 Oscar. Another 39 wins & 134 nominations.",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg",
       "Metascore": "74",
       "imdbRating": "8.6",
       "imdbVotes": "937,412",
@@ -195,11 +214,13 @@ class _MovieListState extends State<MovieList> {
       "Director": "N/A",
       "Writer": "David Benioff, D.B. Weiss",
       "Actors": "Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington",
-      "Plot": "While a civil war brews between several noble families in Westeros, the children of the former rulers of the land attempt to rise up to power. Meanwhile a forgotten race, bent on destruction, plans to return after thousands of years in the North.",
+      "Plot":
+      "While a civil war brews between several noble families in Westeros, the children of the former rulers of the land attempt to rise up to power. Meanwhile a forgotten race, bent on destruction, plans to return after thousands of years in the North.",
       "Language": "English",
       "Country": "USA, UK",
       "Awards": "Won 1 Golden Globe. Another 185 wins & 334 nominations.",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BMjM5OTQ1MTY5Nl5BMl5BanBnXkFtZTgwMjM3NzMxODE@._V1_SX300.jpg",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BMjM5OTQ1MTY5Nl5BMl5BanBnXkFtZTgwMjM3NzMxODE@._V1_SX300.jpg",
       "Metascore": "N/A",
       "imdbRating": "9.5",
       "imdbVotes": "1,046,830",
@@ -224,12 +245,16 @@ class _MovieListState extends State<MovieList> {
       "Genre": "Action, Drama, History",
       "Director": "N/A",
       "Writer": "Michael Hirst",
-      "Actors": "Travis Fimmel, Clive Standen, Gustaf Skarsgård, Katheryn Winnick",
-      "Plot": "The world of the Vikings is brought to life through the journey of Ragnar Lothbrok, the first Viking to emerge from Norse legend and onto the pages of history - a man on the edge of myth.",
+      "Actors":
+      "Travis Fimmel, Clive Standen, Gustaf Skarsgård, Katheryn Winnick",
+      "Plot":
+      "The world of the Vikings is brought to life through the journey of Ragnar Lothbrok, the first Viking to emerge from Norse legend and onto the pages of history - a man on the edge of myth.",
       "Language": "English, Old English, Norse, Old, Latin",
       "Country": "Ireland, Canada",
-      "Awards": "Nominated for 7 Primetime Emmys. Another 17 wins & 49 nominations.",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BOTEzNzI3MDc0N15BMl5BanBnXkFtZTgwMzk1MzA5NzE@._V1_SX300.jpg",
+      "Awards":
+      "Nominated for 7 Primetime Emmys. Another 17 wins & 49 nominations.",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BOTEzNzI3MDc0N15BMl5BanBnXkFtZTgwMzk1MzA5NzE@._V1_SX300.jpg",
       "Metascore": "N/A",
       "imdbRating": "8.6",
       "imdbVotes": "198,041",
@@ -255,11 +280,14 @@ class _MovieListState extends State<MovieList> {
       "Director": "N/A",
       "Writer": "Bruno Heller",
       "Actors": "Ben McKenzie, Donal Logue, David Mazouz, Sean Pertwee",
-      "Plot": "The story behind Detective James Gordon's rise to prominence in Gotham City in the years before Batman's arrival.",
+      "Plot":
+      "The story behind Detective James Gordon's rise to prominence in Gotham City in the years before Batman's arrival.",
       "Language": "English",
       "Country": "USA",
-      "Awards": "Nominated for 4 Primetime Emmys. Another 3 wins & 22 nominations.",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BMTY2MjMwNDE4OV5BMl5BanBnXkFtZTgwNjI1NjU0OTE@._V1_SX300.jpg",
+      "Awards":
+      "Nominated for 4 Primetime Emmys. Another 3 wins & 22 nominations.",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BMTY2MjMwNDE4OV5BMl5BanBnXkFtZTgwNjI1NjU0OTE@._V1_SX300.jpg",
       "Metascore": "N/A",
       "imdbRating": "8.0",
       "imdbVotes": "133,375",
@@ -285,11 +313,13 @@ class _MovieListState extends State<MovieList> {
       "Director": "N/A",
       "Writer": "Courtney Kemp Agboh",
       "Actors": "Omari Hardwick, Joseph Sikora, Andy Bean, Lela Loren",
-      "Plot": "James \"Ghost\" St. Patrick, a wealthy New York night club owner who has it all, catering for the city's elite and dreaming big, lives a double life as a drug kingpin.",
+      "Plot":
+      "James \"Ghost\" St. Patrick, a wealthy New York night club owner who has it all, catering for the city's elite and dreaming big, lives a double life as a drug kingpin.",
       "Language": "English",
       "Country": "USA",
       "Awards": "1 win & 6 nominations.",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BOTA4NTkzMjUzOF5BMl5BanBnXkFtZTgwNzg5ODkxOTE@._V1_SX300.jpg",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BOTA4NTkzMjUzOF5BMl5BanBnXkFtZTgwNzg5ODkxOTE@._V1_SX300.jpg",
       "Metascore": "N/A",
       "imdbRating": "8.0",
       "imdbVotes": "14,770",
@@ -315,11 +345,13 @@ class _MovieListState extends State<MovieList> {
       "Director": "N/A",
       "Writer": "Carlo Bernard, Chris Brancato, Doug Miro, Paul Eckstein",
       "Actors": "Wagner Moura, Boyd Holbrook, Pedro Pascal, Joanna Christie",
-      "Plot": "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar.",
+      "Plot":
+      "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar.",
       "Language": "English, Spanish",
       "Country": "USA",
       "Awards": "Nominated for 2 Golden Globes. Another 4 nominations.",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BMTU0ODQ4NDg2OF5BMl5BanBnXkFtZTgwNzczNTE4OTE@._V1_SX300.jpg",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BMTU0ODQ4NDg2OF5BMl5BanBnXkFtZTgwNzczNTE4OTE@._V1_SX300.jpg",
       "Metascore": "N/A",
       "imdbRating": "8.9",
       "imdbVotes": "118,680",
@@ -345,11 +377,13 @@ class _MovieListState extends State<MovieList> {
       "Director": "N/A",
       "Writer": "Vince Gilligan",
       "Actors": "Bryan Cranston, Anna Gunn, Aaron Paul, Dean Norris",
-      "Plot": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's financial future.",
+      "Plot":
+      "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's financial future.",
       "Language": "English, Spanish",
       "Country": "USA",
       "Awards": "Won 2 Golden Globes. Another 132 wins & 218 nominations.",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BMTQ0ODYzODc0OV5BMl5BanBnXkFtZTgwMDk3OTcyMDE@._V1_SX300.jpg",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BMTQ0ODYzODc0OV5BMl5BanBnXkFtZTgwMDk3OTcyMDE@._V1_SX300.jpg",
       "Metascore": "N/A",
       "imdbRating": "9.5",
       "imdbVotes": "889,883",
@@ -374,13 +408,17 @@ class _MovieListState extends State<MovieList> {
       "Runtime": "N/A",
       "Genre": "Action, Adventure, Fantasy",
       "Director": "Scott Derrickson",
-      "Writer": "Scott Derrickson (screenplay), C. Robert Cargill (screenplay), Jon Spaihts (story by), Scott Derrickson (story by), C. Robert Cargill (story by), Steve Ditko (comic book)",
-      "Actors": "Rachel McAdams, Benedict Cumberbatch, Mads Mikkelsen, Tilda Swinton",
-      "Plot": "After his career is destroyed, a brilliant but arrogant and conceited surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.",
+      "Writer":
+      "Scott Derrickson (screenplay), C. Robert Cargill (screenplay), Jon Spaihts (story by), Scott Derrickson (story by), C. Robert Cargill (story by), Steve Ditko (comic book)",
+      "Actors":
+      "Rachel McAdams, Benedict Cumberbatch, Mads Mikkelsen, Tilda Swinton",
+      "Plot":
+      "After his career is destroyed, a brilliant but arrogant and conceited surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.",
       "Language": "English",
       "Country": "USA",
       "Awards": "N/A",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg",
       "Metascore": "N/A",
       "imdbRating": "N/A",
       "imdbVotes": "N/A",
@@ -402,13 +440,16 @@ class _MovieListState extends State<MovieList> {
       "Runtime": "N/A",
       "Genre": "Action, Adventure, Sci-Fi",
       "Director": "Gareth Edwards",
-      "Writer": "Chris Weitz (screenplay), Tony Gilroy (screenplay), John Knoll (story), Gary Whitta (story), George Lucas (characters)",
+      "Writer":
+      "Chris Weitz (screenplay), Tony Gilroy (screenplay), John Knoll (story), Gary Whitta (story), George Lucas (characters)",
       "Actors": "Felicity Jones, Riz Ahmed, Mads Mikkelsen, Ben Mendelsohn",
-      "Plot": "The Rebellion makes a risky move to steal the plans to the Death Star, setting up the epic saga to follow.",
+      "Plot":
+      "The Rebellion makes a risky move to steal the plans to the Death Star, setting up the epic saga to follow.",
       "Language": "English",
       "Country": "USA",
       "Awards": "1 nomination.",
-      "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjQyMzI2OTA3OF5BMl5BanBnXkFtZTgwNDg5NjQ0OTE@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "Poster":
+      "https://images-na.ssl-images-amazon.com/images/M/MV5BMjQyMzI2OTA3OF5BMl5BanBnXkFtZTgwNDg5NjQ0OTE@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
       "Metascore": "N/A",
       "imdbRating": "N/A",
       "imdbVotes": "N/A",
@@ -432,13 +473,17 @@ class _MovieListState extends State<MovieList> {
       "Runtime": "N/A",
       "Genre": "Action, Adventure, Fantasy",
       "Director": "Justin Kurzel",
-      "Writer": "Bill Collage (screenplay), Adam Cooper (screenplay), Michael Lesslie (screenplay)",
-      "Actors": "Michael Fassbender, Michael Kenneth Williams, Marion Cotillard, Jeremy Irons",
-      "Plot": "When Callum Lynch explores the memories of his ancestor Aguilar and gains the skills of a Master Assassin, he discovers he is a descendant of the secret Assassins society.",
+      "Writer":
+      "Bill Collage (screenplay), Adam Cooper (screenplay), Michael Lesslie (screenplay)",
+      "Actors":
+      "Michael Fassbender, Michael Kenneth Williams, Marion Cotillard, Jeremy Irons",
+      "Plot":
+      "When Callum Lynch explores the memories of his ancestor Aguilar and gains the skills of a Master Assassin, he discovers he is a descendant of the secret Assassins society.",
       "Language": "English",
       "Country": "UK, France, USA, Hong Kong",
       "Awards": "N/A",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BMTU2MTQwMjU1OF5BMl5BanBnXkFtZTgwMDA5NjU5ODE@._V1_SX300.jpg",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BMTU2MTQwMjU1OF5BMl5BanBnXkFtZTgwMDA5NjU5ODE@._V1_SX300.jpg",
       "Metascore": "N/A",
       "imdbRating": "N/A",
       "imdbVotes": "N/A",
@@ -462,12 +507,15 @@ class _MovieListState extends State<MovieList> {
       "Genre": "Action, Crime, Drama",
       "Director": "N/A",
       "Writer": "Cheo Hodari Coker",
-      "Actors": "Mahershala Ali, Mike Colter, Frankie Faison, Erik LaRay Harvey",
-      "Plot": "Given superstrength and durability by a sabotaged experiment, a wrongly accused man escapes prison to become a superhero for hire.",
+      "Actors":
+      "Mahershala Ali, Mike Colter, Frankie Faison, Erik LaRay Harvey",
+      "Plot":
+      "Given superstrength and durability by a sabotaged experiment, a wrongly accused man escapes prison to become a superhero for hire.",
       "Language": "English",
       "Country": "USA",
       "Awards": "N/A",
-      "Poster": "http://ia.media-imdb.com/images/M/MV5BMTcyMzc1MjI5MF5BMl5BanBnXkFtZTgwMzE4ODY2OTE@._V1_SX300.jpg",
+      "Poster":
+      "http://ia.media-imdb.com/images/M/MV5BMTcyMzc1MjI5MF5BMl5BanBnXkFtZTgwMzE4ODY2OTE@._V1_SX300.jpg",
       "Metascore": "N/A",
       "imdbRating": "N/A",
       "imdbVotes": "N/A",
@@ -484,6 +532,7 @@ class _MovieListState extends State<MovieList> {
       ]
     }
   ];
+
 
   String jsonDataObj = '''
     {
@@ -519,7 +568,8 @@ class _MovieListState extends State<MovieList> {
   @override
   Widget build(BuildContext context) {
     //Get data from json list
-    List<Movies> moviesList = jsonDataList.map((json) => Movies.fromJson(json)).toList();
+    List<Movies> moviesList =
+    jsonDataList.map((json) => Movies.fromJson(json)).toList();
 
     //get data from json object
     Map<String, dynamic> movieData = json.decode(jsonDataObj);
@@ -528,6 +578,17 @@ class _MovieListState extends State<MovieList> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        automaticallyImplyLeading: true,
+        leading: GestureDetector(
+          onTap: () {
+            debugPrint("Back");
+            Navigator.pop(context);
+          },
+          child: const Icon(
+            Icons.arrow_back,
+            color: Colors.white, // Change the color of the arrow icon
+          ),
+        ),
         backgroundColor: Colors.blueGrey,
         title: const Text(
           "MovieList",
@@ -535,31 +596,130 @@ class _MovieListState extends State<MovieList> {
         ),
       ),
       body: ListView.builder(
+        scrollDirection: Axis.vertical,
           itemCount: moviesList.length,
           itemBuilder: (BuildContext context, int index) {
-            return Card(
-              elevation: 5,
-              color: Colors.blueGrey.shade100,
-              child: ListTile(
-                leading: CircleAvatar(
-                  backgroundColor: Colors.blueGrey.shade700,
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50)
-                    ),
-                    child: Text("HI"),
-                  ),
-                ),
-                title: Text(moviesList[index].title),
-                subtitle: Text(moviesList[index].year),
-                trailing: const Text("---"),
-                onTap: () => {
-                  debugPrint("Movie Name ${myMovie.title}"),
-                  Navigator.push(context, MaterialPageRoute(builder: (context) =>  MovieDetails(movieName: moviesList[index].title)))
-                },
-              ),
-            );
+            // return _movieCard2(context, moviesList[index]);
+            return _movieCard(context, moviesList[index]);
           }),
     );
   }
+
+  Widget _movieCard(BuildContext context, Movies movies) {
+    return InkWell(
+      child: SizedBox(
+        width: MediaQuery.of(context).size.width,
+        height: 130,
+        child: Card(
+          color: Colors.blueGrey,
+          child: Padding(
+              padding: const EdgeInsets.only(left: 6, top: 6, bottom: 6),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 90,
+                    margin: const EdgeInsets.only(right: 8),
+                    height: MediaQuery.of(context).size.height,
+                    decoration: BoxDecoration(
+                        borderRadius:
+                        const BorderRadius.all(Radius.circular(10)),
+                        border: Border.all(color: Colors.blueGrey, width: 1.2),
+                        image: DecorationImage(
+                            image: NetworkImage(movies.images[0]),
+                            fit: BoxFit.cover)),
+                  ),
+                  Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          movies.title,
+                          style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                        Text(
+                          "Rating: ${movies.rated}",
+                          style: const TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.normal,
+                              color: Colors.white),
+                        ),
+                        Text(
+                          "Genre: ${movies.genre}",
+                          style: const TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.normal,
+                              color: Colors.yellow),
+                        ),
+                        Text(
+                          "Released: ${movies.released}",
+                          style: const TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.normal,
+                              color: Colors.grey),
+                        ),
+                        Text(
+                          "Runtime: ${movies.runtime}",
+                          style: const TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.normal,
+                              color: Colors.greenAccent),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              )),
+        ),
+      ),
+      onTap: () => {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => MovieDetails(moviesObj: movies)))
+      },
+    );
+  }
+
+  Widget _movieCard2(BuildContext context, Movies movies) {
+    return Card(
+      elevation: 5,
+      color: Colors.blueGrey.shade100,
+      child: ListTile(
+        leading: CircleAvatar(
+          backgroundColor: Colors.blueGrey.shade700,
+          child: _getMoviePoster(movies.images[0]),
+        ),
+        title: Text(movies.title),
+        subtitle: Text(movies.year),
+        trailing: const Text("---"),
+        onTap: () => {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => MovieDetails(moviesObj: movies)))
+        },
+      ),
+    );
+  }
+
+  Container _getMoviePoster(String movieUrl) {
+    debugPrint("Movie Image$movieUrl");
+    return Container(
+      width: 100,
+      height: 100,
+      decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: const BorderRadius.all(Radius.circular(50)),
+          border: Border.all(color: Colors.white, width: 1.2),
+          image: DecorationImage(
+              image: NetworkImage(movieUrl), fit: BoxFit.cover)),
+    );
+  }
 }
+
