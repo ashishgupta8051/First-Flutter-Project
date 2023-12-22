@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:first_flutter_project/model/movies.dart';
-import 'package:first_flutter_project/ui/screens/moviescreens/MovieDetails.dart';
+import 'package:first_flutter_project/model/movies_data.dart';
+import 'package:first_flutter_project/ui/screens/moviescreens/movie_details.dart';
 import 'package:flutter/material.dart';
 
-import '../../../utils/HexColor.dart';
+import '../../../utils/hex_color.dart';
 
 class MovieList extends StatefulWidget {
   const MovieList({super.key});

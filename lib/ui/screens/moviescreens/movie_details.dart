@@ -1,11 +1,11 @@
-import 'package:first_flutter_project/model/movies.dart';
-import 'package:first_flutter_project/ui/screens/moviescreens/MovieDetailsCasts.dart';
-import 'package:first_flutter_project/ui/screens/moviescreens/MovieDetailsExtraImages.dart';
-import 'package:first_flutter_project/ui/screens/moviescreens/MovieDetailsHeaderWithImage.dart';
-import 'package:first_flutter_project/ui/screens/moviescreens/MovieList.dart';
+import 'package:first_flutter_project/model/movies_data.dart';
+import 'package:first_flutter_project/ui/screens/moviescreens/movie_details_cast.dart';
+import 'package:first_flutter_project/ui/screens/moviescreens/movie_details_extra_image.dart';
+import 'package:first_flutter_project/ui/screens/moviescreens/movie_details_header_with_image.dart';
+import 'package:first_flutter_project/ui/screens/moviescreens/movie_list.dart';
 import 'package:flutter/material.dart';
 
-import 'MovieDetailsThumbnail.dart';
+import 'movie_details_thumbnail.dart';
 
 class MovieDetails extends StatelessWidget {
   final Movies? moviesObj;

@@ -2,9 +2,7 @@ import 'dart:convert';
 
 Movies moviesFromJson(String str) => Movies.fromJson(json.decode(str));
 
-/*
 String moviesToJson(Movies data) => json.encode(data.toJson());
-*/
 
 class Movies {
   String released;
@@ -77,7 +75,6 @@ class Movies {
         writer: json["Writer"],
       );
 
-/*
   Map<dynamic, dynamic> toJson() => {
         "Released": released,
         "Metascore": metascore,
@@ -101,5 +98,4 @@ class Movies {
         "Genre": genre,
         "Writer": writer,
       };
-*/
 }

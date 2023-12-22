@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../model/movies.dart';
+import '../../../model/movies_data.dart';
 
 class MovieDetailsCasts extends StatelessWidget {
   const MovieDetailsCasts({super.key, required this.movies});

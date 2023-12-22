@@ -1,4 +1,4 @@
-import 'package:first_flutter_project/model/movies.dart';
+import 'package:first_flutter_project/model/movies_data.dart';
 import 'package:flutter/material.dart';
 
 class MovieDetailsHeaderWithImage extends StatelessWidget {

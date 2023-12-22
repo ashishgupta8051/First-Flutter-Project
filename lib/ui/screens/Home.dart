@@ -1,10 +1,12 @@
-import 'package:first_flutter_project/ui/screens/BizCard.dart';
-import 'package:first_flutter_project/ui/screens/QuizApp.dart';
-import 'package:first_flutter_project/ui/screens/QuotesScreen.dart';
-import 'package:first_flutter_project/ui/screens/SplitCalculator.dart';
-import 'package:first_flutter_project/ui/screens/moviescreens/MovieList.dart';
-import 'package:first_flutter_project/ui/widgets/CustomButton.dart';
-import 'package:first_flutter_project/ui/widgets/ScaffoldExaple.dart';
+import 'package:first_flutter_project/ui/screens/personal_details.dart';
+import 'package:first_flutter_project/ui/screens/quiz_app.dart';
+import 'package:first_flutter_project/ui/screens/quotes_screen.dart';
+import 'package:first_flutter_project/ui/screens/split_calculator.dart';
+import 'package:first_flutter_project/ui/screens/userdata_list.dart';
+import 'package:first_flutter_project/ui/screens/weather_forcast_screen.dart';
+import 'package:first_flutter_project/ui/screens/moviescreens/movie_list.dart';
+import 'package:first_flutter_project/ui/widgets/custom_button.dart';
+import 'package:first_flutter_project/ui/widgets/scaffold_exaple.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -20,6 +22,8 @@ class Home extends StatelessWidget {
       "Movies Screen",
       "Custom Buttons Screen",
       "Scaffold Example Screen",
+      "Network Calling Screen",
+      "Weather Forecast Screen",
     ];
 
     return Scaffold(
@@ -52,7 +56,7 @@ class Home extends StatelessWidget {
                   onTap: (){
                     switch(index){
                       case 0:{
-                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  const BizCard()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  const PersonalDetails()));
                         break;
                       }
                       case 1:{
@@ -77,6 +81,14 @@ class Home extends StatelessWidget {
                       }
                       case 6:{
                         Navigator.push(context, MaterialPageRoute(builder: (context) =>  const ScaffoldExample()));
+                        break;
+                      }
+                      case 7:{
+                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  const UserDataList()));
+                        break;
+                      }
+                      case 8:{
+                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  const WeatherForcastScreen()));
                         break;
                       }
                     }

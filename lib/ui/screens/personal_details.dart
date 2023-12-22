@@ -2,8 +2,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class BizCard extends StatelessWidget {
-  const BizCard({super.key});
+class PersonalDetails extends StatelessWidget {
+  const PersonalDetails({super.key});
 
   @override
   Widget build(BuildContext context) {

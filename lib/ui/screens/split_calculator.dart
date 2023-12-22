@@ -1,4 +1,4 @@
-import 'package:first_flutter_project/utils/HexColor.dart';
+import 'package:first_flutter_project/utils/hex_color.dart';
 import 'package:flutter/material.dart';
 
 class SplitCalculator extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'CustomButton.dart';
+import 'custom_button.dart';
 
 class ScaffoldExample extends StatelessWidget {
   const ScaffoldExample({super.key});
