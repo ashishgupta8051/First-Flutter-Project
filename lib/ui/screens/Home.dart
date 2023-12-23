@@ -3,7 +3,7 @@ import 'package:first_flutter_project/ui/screens/quiz_app.dart';
 import 'package:first_flutter_project/ui/screens/quotes_screen.dart';
 import 'package:first_flutter_project/ui/screens/split_calculator.dart';
 import 'package:first_flutter_project/ui/screens/userdata_list.dart';
-import 'package:first_flutter_project/ui/screens/weather_forcast_screen.dart';
+import 'package:first_flutter_project/ui/screens/weather_forecast/weather_forecast_screen.dart';
 import 'package:first_flutter_project/ui/screens/moviescreens/movie_list.dart';
 import 'package:first_flutter_project/ui/widgets/custom_button.dart';
 import 'package:first_flutter_project/ui/widgets/scaffold_exaple.dart';
@@ -88,7 +88,7 @@ class Home extends StatelessWidget {
                         break;
                       }
                       case 8:{
-                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  const WeatherForcastScreen()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  const WeatherForecastScreen()));
                         break;
                       }
                     }

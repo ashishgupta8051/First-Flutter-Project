@@ -37,11 +37,11 @@ class _UserDataListState extends State<UserDataList> {
             ),
           ),
           body: FutureBuilder<List<UserData>>(
-            future: Network.fetchUserData("${Constant.BASE_URL}users"),
+            future: Network.fetchUserData("${Constant.baseUrl}users"),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
                 return const Center(
-                  child: CircularProgressIndicator(),
+                  child: CircularProgressIndicator(color: Colors.yellow,),
                 );
               } else if (snapshot.hasError) {
                 return Text('Error: ${snapshot.error}');
