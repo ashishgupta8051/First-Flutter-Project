@@ -9,6 +9,9 @@ import 'package:first_flutter_project/ui/widgets/custom_button.dart';
 import 'package:first_flutter_project/ui/widgets/scaffold_exaple.dart';
 import 'package:flutter/material.dart';
 
+import '../../flutter_google_map/googleMap.dart';
+import '../../flutter_google_map/quake_app.dart';
+
 class Home extends StatelessWidget {
   const Home({super.key});
 
@@ -24,6 +27,8 @@ class Home extends StatelessWidget {
       "Scaffold Example Screen",
       "Network Calling Screen",
       "Weather Forecast Screen",
+      "Google Map Integration",
+      "Quakes Screen"
     ];
 
     return Scaffold(
@@ -89,6 +94,14 @@ class Home extends StatelessWidget {
                       }
                       case 8:{
                         Navigator.push(context, MaterialPageRoute(builder: (context) =>  const WeatherForecastScreen()));
+                        break;
+                      }
+                      case 9:{
+                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  const GoogleMapIntegration()));
+                        break;
+                      }
+                      case 10:{
+                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  const QuakeApp()));
                         break;
                       }
                     }

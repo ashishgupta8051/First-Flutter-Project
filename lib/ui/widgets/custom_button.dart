@@ -25,7 +25,6 @@ class CustomButton extends StatelessWidget {
                 onPressed: () => _onButtonPressed("Elevated Button"),
                 child: const Text('Elevated Button'),
               ),
-
               const Padding(padding: EdgeInsets.only(top: 20)),
               TextButton(
                 onPressed: () => _onButtonPressed("Text Button"),
@@ -72,14 +71,14 @@ class CustomButton extends StatelessWidget {
                   ],
                 ),
               )
-
             ],
           ),
         ),
       ),
     );
-    // GestureDetector
-/*
+
+    // Gesture Detector
+    /*
     return GestureDetector(
       onTap: () {
         const shackBar = SnackBar(

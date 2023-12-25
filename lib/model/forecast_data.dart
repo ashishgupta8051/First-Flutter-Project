@@ -98,7 +98,7 @@ class ListElement {
     FeelsLike feelsLike;
     double speed;
     int dt;
-    double pop;
+    num pop;
     int sunset;
     List<Weather> weather;
     int humidity;
@@ -113,7 +113,7 @@ class ListElement {
         feelsLike: FeelsLike.fromJson(json["feels_like"]),
         speed: json["speed"]?.toDouble(),
         dt: json["dt"],
-        pop: json["pop"]?.toDouble(),
+        pop: json["pop"],
         sunset: json["sunset"],
         weather: List<Weather>.from(json["weather"].map((x) => Weather.fromJson(x))),
         humidity: json["humidity"],

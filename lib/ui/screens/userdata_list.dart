@@ -32,7 +32,7 @@ class _UserDataListState extends State<UserDataList> {
               },
               child: const Icon(
                 Icons.arrow_back,
-                color: Colors.black, // Change the color of the arrow icon
+                color: Colors.black,
               ),
             ),
           ),
