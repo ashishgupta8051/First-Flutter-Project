@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 
 import '../../flutter_google_map/googleMap.dart';
 import '../../flutter_google_map/quake_app.dart';
+import 'firebase/board_app.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -28,7 +29,8 @@ class Home extends StatelessWidget {
       "Network Calling Screen",
       "Weather Forecast Screen",
       "Google Map Integration",
-      "Quakes Screen"
+      "Quakes Screen",
+      "Firebase Screen"
     ];
 
     return Scaffold(
@@ -102,6 +104,10 @@ class Home extends StatelessWidget {
                       }
                       case 10:{
                         Navigator.push(context, MaterialPageRoute(builder: (context) =>  const QuakeApp()));
+                        break;
+                      }
+                      case 11:{
+                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  const BoardApp()));
                         break;
                       }
                     }

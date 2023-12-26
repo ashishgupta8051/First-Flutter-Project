@@ -1,8 +1,8 @@
 plugins {
     id "com.android.application"
+    id "com.google.gms.google-services"
     id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
-    id "com.google.gms.google-services"
 }
 
 def localProperties = new Properties()
@@ -38,8 +38,6 @@ if (compileSdk == null) {
     compileSdk = '34'
 }
 
-def packageName = "com.example.firstproject.first_flutter_project"
-
 android {
     namespace "com.example.firstproject.first_flutter_project"
     compileSdkVersion compileSdk.toInteger()
@@ -59,7 +57,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.first_flutter_project"
+        applicationId "com.example.firstproject.first_flutter_project"
         minSdkVersion minSdk.toInteger()
         targetSdkVersion targetSdk.toInteger()
         versionCode flutterVersionCode.toInteger()
