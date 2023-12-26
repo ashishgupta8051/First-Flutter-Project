@@ -106,10 +106,10 @@ class Home extends StatelessWidget {
                         Navigator.push(context, MaterialPageRoute(builder: (context) =>  const QuakeApp()));
                         break;
                       }
-                      case 11:{
+                     /* case 11:{
                         Navigator.push(context, MaterialPageRoute(builder: (context) =>  const BoardApp()));
                         break;
-                      }
+                      }*/
                     }
                   },
                 ),

@@ -1,12 +1,13 @@
-import 'package:firebase_core/firebase_core.dart';
+import 'dart:ui';
+
 import 'package:first_flutter_project/ui/screens/Home.dart';
 import 'package:flutter/material.dart';
 
-/*void main() => runApp(const MaterialApp(
+void main() => runApp(const MaterialApp(
   home: Home()
-));*/
+));
 
-Future<void> main() async {
+/*Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
       options: const FirebaseOptions(
@@ -16,4 +17,4 @@ Future<void> main() async {
           projectId: 'first-flutter-project-c253d')
   );
   runApp(const MaterialApp(home: Home()));
-}
+}*/
