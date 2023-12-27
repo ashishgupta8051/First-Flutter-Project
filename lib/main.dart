@@ -11,10 +11,10 @@ void main() => runApp(const MaterialApp(
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
       options: const FirebaseOptions(
-          apiKey: 'AIzaSyCxr_V0Gk36bY8shGvoPVOiuYR02hiQiRc',
-          appId: '1:760589850854:android:a3367f404c6ed5549c0327d',
-          messagingSenderId: '760589850854',
-          projectId: 'first-flutter-project-c253d')
+          apiKey: 'AIzaSyDmLQkQCj_NcjF7zAB7vQPVGANoRIndn8U',
+          appId: '1:523111598633:android:455b507b4fc38b4fc9aa38',
+          messagingSenderId: '523111598633',
+          projectId: 'flutter-first-app-79d23')
   );
   runApp(const MaterialApp(home: Home()));
 }*/

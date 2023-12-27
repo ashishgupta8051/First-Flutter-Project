@@ -1,6 +1,3 @@
-/*
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 class BoardApp extends StatefulWidget {
@@ -13,17 +10,12 @@ class BoardApp extends StatefulWidget {
 class _BoardAppState extends State<BoardApp> {
 
   @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    Firebase.initializeApp();
-    var firebaseStore = FirebaseFirestore.instance.collection("board").snapshots();
+    // var firebaseStore = FirebaseFirestore.instance.collection("board").snapshots();
 
-    return Scaffold(
+    return Container();
+
+    /*return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
           backgroundColor: Colors.blueAccent,
@@ -50,7 +42,6 @@ class _BoardAppState extends State<BoardApp> {
           return Text(snapshot.data!.docs[index]["title"].toString());
         });
       }),
-    );
+    );*/
   }
 }
-*/

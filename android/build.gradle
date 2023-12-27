@@ -1,8 +1,10 @@
 buildscript {
     ext.kotlin_version = '1.7.10'
+    ext.google_service = '4.4.0'
     repositories {
         google()
         mavenCentral()
+
     }
 
     dependencies {
