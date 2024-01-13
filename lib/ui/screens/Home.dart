@@ -1,3 +1,4 @@
+import 'package:first_flutter_project/ui/screens/jokes/master_detail_screen.dart';
 import 'package:first_flutter_project/ui/screens/personal_details.dart';
 import 'package:first_flutter_project/ui/screens/quiz_app.dart';
 import 'package:first_flutter_project/ui/screens/quotes_screen.dart';
@@ -30,7 +31,8 @@ class Home extends StatelessWidget {
       "Weather Forecast Screen",
       "Google Map Integration",
       "Quakes Screen",
-      "Firebase Screen"
+      "Firebase Screen",
+      "Handle Different Size of Screen & Orientation",
     ];
 
     return Scaffold(
@@ -108,6 +110,10 @@ class Home extends StatelessWidget {
                       }
                       case 11:{
                         Navigator.push(context, MaterialPageRoute(builder: (context) =>  const BoardApp()));
+                        break;
+                      }
+                      case 12:{
+                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  const MasterDetailScreen()));
                         break;
                       }
                     }
