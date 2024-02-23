@@ -22,13 +22,14 @@ Flutter RoadMap
     2.	Http/Okhttp
     3.	Dio
     4.	Pub.dev
-9. Local Storage
+9.  Storage
     1.	Sqlite
     2.	Shared preferences
     3.	Hive
     4.	Moor
     5.	Firebase
-10. Firebase Database
+    6.  Get Storage
+10. Firebase
     1.	Authentication
     2.	Storage
     3.	Firebase database
